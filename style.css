@@ -1,0 +1,10 @@
+body {
+    background-color: #f0f0f5; /* Light grayish blue */
+    background-image: url('background.jpg'); /* Add an image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif; /* Improve text appearance */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
