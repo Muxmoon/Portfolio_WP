@@ -27,3 +27,24 @@ body {
 @keyframes blink {
   50% { opacity: 0; }
 }
+
+.character-img {
+  position: fixed;  /* Keeps it in place when scrolling */
+  bottom: 10px;  /* Adjusts distance from bottom */
+  right: 10px;  /* Adjusts distance from right */
+  width: 150px;  /* Adjust size */
+  max-width: 20%;  /* Ensures it scales well */
+  opacity: 0.9;  /* Slight transparency */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.character-img:hover {
+  transform: scale(1.1);  /* Slight zoom when hovered */
+  opacity: 1;  /* Becomes fully visible */
+}
+
+/* Dark Mode Adjustment */
+.light-mode .character-img {
+  opacity: 1;  /* More visible in light mode */
+}
