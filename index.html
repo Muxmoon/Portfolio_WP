@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header class="heading">
-    <h1 class="typing">Hi there</h1>
-    <p>I'm Mukhammedjan, a wanderer from the web.</p>
+    <!-- <h1 class="typing">Hi there</h1> -->
+    <!-- <p>I'm Mukhammedjan, a wanderer from the web.</p> -->
+    <h1 class="typing "id="title" data-en="Hi there" data-jp="こんにちは">Hi there</h1>
+    <p id="intro" data-en="I'm Mukhammedjan, a wanderer from the web." 
+    data-jp="私はウェブの放浪者、ムハメドジャンです。">
+    I'm Mukhammedjan, a wanderer from the web.
+    </p>
+    <!-- Buttons -->
+    <button id="lang-toggle">日本語</button>
+    <button id="theme-toggle" data-en="🌙 Change Theme Mode" data-jp="🌙 テーマモードの変更">🌙 Change Theme Mode</button>
+    <a href="skills.html"><button id="skills-button" data-en="📜 View Skills" data-jp="📜 スキルを見る">📜 View Skills</button></a>
   </header>
 </body>
 </html>
