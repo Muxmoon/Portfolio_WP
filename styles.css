@@ -1,3 +1,7 @@
+* {
+  transition: all 0.2s ease-in-out;
+}
+
 body {
   background-color: #0a3b63;
   background-size: cover;
@@ -6,14 +10,15 @@ body {
   color: rgb(256, 256, 256);
   margin: 0;
   padding: 0;
-  
+  text-align: center;
 }
-.heading {
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 50px 20px;
+
+.light-mode {
+  background-color: #D2EAF3;
+  color: black;
 }
+
+
 .typing::after {
   content: "|";
   animation: blink 0.7s infinite;
