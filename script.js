@@ -28,17 +28,24 @@ if (form) {
 
         formStatus.textContent = "Sending...";
 
-        const response = await fetch("https://script.google.com/macros/s/AKfycby0fT7f_ZWodKjwKas6VZbNnOvHIEOC-A23JLnhzir6EHS9aP-X2Bctuan08BaDNckP/exec", {
-            method: "POST",
-            body: JSON.stringify(data),
-            headers: { "Content-Type": "application/json" }
-        });
+        try {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbx_MRU5ckVPZVkJ9eKa_i73ZX4oKPPjkDu-GmQ-Jn3Oqdf4GwI7uh42ljTlx_zqzvLq/exec", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: { 
+                    "Content-Type": "application/json"
+                }
+            });
 
-        if (response.ok) {
-            formStatus.textContent = "✅ Message sent!";
-            form.reset();
-        } else {
-            formStatus.textContent = "❌ Error sending message!";
+            if (response.ok) {
+                formStatus.textContent = "✅ Message sent!";
+                form.reset();
+            } else {
+                formStatus.textContent = "❌ Error sending message!";
+            }
+        } catch (error) {
+            formStatus.textContent = "❌ Could not connect to the server!";
+            console.error("Error:", error);
         }
     });
 }
