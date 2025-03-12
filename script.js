@@ -29,7 +29,7 @@ if (form) {
         formStatus.textContent = "Sending...";
 
         try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbxAhWK_T1fy9Tc3ZIX7RXbxnP6sGqjP6OyJB-9MH15T_EJdRGUabeWxXLLnBg5DKr3G/exec", {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbwE6eSFtVXvcJYRONAS21A_AcCWNXKJrVWJ1GM0XdaITPdLXZGwGubtO7cWcHynBbY8/exec", {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: { 
