@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="heading">
+    <h1 id="contact-title" data-en="Contact Me" data-jp="ご連絡ください">Contact Me</h1>
+    <p data-en="Feel free to reach me out!" 
+    data-jp="お気軽にご連絡ください!">
+    Feel free to reach me out!.
+    </p>
+    <button id="lang-toggle">日本語</button>
+    <button id="theme-toggle" data-en="🌙 Change Theme Mode" data-jp="🌙 テーマモードの変更">🌙 Change Theme Mode</button>
+    <a href="index.html"><button data-en="🏠 Back to Home" data-jp="🏠 ホームへ戻る">🏠 Back to Home</button></a>
+  </header>
+  <section id="contact">
+    <form id="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="form-status"></p>
+  </section>
+  <img src="herta.png" alt="Character" class="character-img">
+</body>
+</html>
